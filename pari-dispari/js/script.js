@@ -11,14 +11,20 @@ var numero = getRandomNumber(1, 5);
 console.log(numero);
 var somma = numero + numeroUtente
 console.log(somma);
-if (somma % 2 == 0 && pariDispari == 'pari') {
+if (checkOddEven(somma) == pariDispari) {
   alert('hai vinto');
 }
-else if (somma % 2 != 0 && pariDispari == 'dispari') {
-  alert('hai vinto');
+else {
+  alert('Hai perso');
 }
-else  {
-  alert('hai perso');
+
+function checkOddEven(num) {
+  if (num % 2 == 0) {
+  return 'pari' ;
+  }
+  else {
+    return 'dispari';
+  }
 }
 
 function getRandomNumber(min, max) {
