@@ -14,6 +14,9 @@ console.log(somma);
 if (somma % 2 == 0 && pariDispari == 'pari') {
   alert('hai vinto');
 }
+else if (somma % 2 != 0 && pariDispari == 'dispari') {
+  alert('hai vinto');
+}
 else  {
   alert('hai perso');
 }
